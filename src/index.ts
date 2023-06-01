@@ -1,3 +1,3 @@
-import Magnifier from './components/Magnifier'
+import Magnifier from './components/App'
 
 export { Magnifier }
