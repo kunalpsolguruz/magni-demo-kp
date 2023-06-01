@@ -46,7 +46,7 @@ Install dependencies
 
 ## Configuration
 
-| Property            | Type          | Default    | Parameters                                                                                                                                                      |
+| Parameters            | Type          | Default    | Description                                                                                                                                                      |
 | ---------------- | ------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `image` (required) | String        | –          | URL of the image                                                                                                                                      |
 | `zoom`         | Number | 2   | it's define the zoom level of component                                          |
