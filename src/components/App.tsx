@@ -26,8 +26,10 @@ const Magnifier = (props: {
   const [magnifierImageLeft, setMagnifierImageLeft] = useState(0)
   const [magnifierImageTop, setMagnifierImageTop] = useState(0)
 
+  // eslint0disable-next-line
   const imageDom = useRef<any>()
 
+  // eslint-disable-next-line
   const onHover = (e: any) => {
     const { offsetX, offsetY } = e.nativeEvent
     const mouseTop = offsetY
@@ -58,7 +60,7 @@ const Magnifier = (props: {
         !magnifierVisible && setMagnifierVisible(true)
       }}
     >
-      <img src={image} style={{ width: '100%' }} ref={imageDom} onMouseMove={onHover} alt='dsds' />
+      <img src={image} style={{ width: '100%' }} ref={imageDom} onMouseMove={onHover} alt='img' />
       <div
         className='magnifier'
         style={{
@@ -87,7 +89,7 @@ const Magnifier = (props: {
             transform: `scale(${imageZoom})`,
             transformOrigin: 'left top',
           }}
-          alt='abc'
+          alt='img'
         />
       </div>
     </div>
