@@ -50,8 +50,7 @@ const Magnifier = (props: {
 
   return (
     <div
-      style={{ width }}
-      className='imageWrap'
+      style={{ width, position: 'relative', cursor: 'none' }}
       onMouseOut={() => {
         setMagnifierVisible(false)
       }}
@@ -59,10 +58,16 @@ const Magnifier = (props: {
         !magnifierVisible && setMagnifierVisible(true)
       }}
     >
-      <img src={image} className='image' ref={imageDom} onMouseMove={onHover} alt='dsds' />
+      <img src={image} style={{ width: '100%' }} ref={imageDom} onMouseMove={onHover} alt='dsds' />
       <div
         className='magnifier'
         style={{
+          position: 'absolute',
+          border: '1px solid  red',
+          borderRadius: '50%',
+          boxShadow: '0 0 20px #000',
+          overflow: 'hidden',
+          pointerEvents: 'none',
           display: magnifierVisible ? 'block' : 'none',
           left: left,
           top: top,
@@ -76,6 +81,7 @@ const Magnifier = (props: {
           src={image}
           className='magnifierImage'
           style={{
+            position: 'absolute',
             left: magnifierImageLeft,
             top: magnifierImageTop,
             transform: `scale(${imageZoom})`,
