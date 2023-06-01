@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react'
 
 const Magnifier = (props: {
-  image: any
+  image: string
   width?: number
   zoom?: number
   magnifierWidth?: number
@@ -12,7 +12,7 @@ const Magnifier = (props: {
   const {
     image,
     width = '100%',
-    zoom = 2,
+    zoom = 1,
     magnifierWidth = 150,
     magnifierHeight = 150,
     borderWidth = 2,

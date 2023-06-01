@@ -1,6 +1,6 @@
 {
-  "name": "magni-demo-kp",
-  "version": "2.1.1",
+  "name": "magni-demo-kp-sol-sg",
+  "version": "1.1.1",
   "description": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
