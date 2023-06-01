@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 
 const Magnifier = (props: {
   image: string
-  width?: number
+  width?: number | string
   zoom?: number
   magnifierWidth?: number
   magnifierHeight?: number
@@ -12,7 +12,7 @@ const Magnifier = (props: {
   const {
     image,
     width = '100%',
-    zoom = 1,
+    zoom = 2,
     magnifierWidth = 150,
     magnifierHeight = 150,
     borderWidth = 2,
@@ -26,10 +26,8 @@ const Magnifier = (props: {
   const [magnifierImageLeft, setMagnifierImageLeft] = useState(0)
   const [magnifierImageTop, setMagnifierImageTop] = useState(0)
 
-  // eslint0disable-next-line
   const imageDom = useRef<any>()
 
-  // eslint-disable-next-line
   const onHover = (e: any) => {
     const { offsetX, offsetY } = e.nativeEvent
     const mouseTop = offsetY

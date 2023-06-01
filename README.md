@@ -44,6 +44,19 @@ Install dependencies
   npm install
 ```
 
+## Configuration
+
+| Property            | Type          | Default    | Parameters                                                                                                                                                      |
+| ---------------- | ------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `image` (required) | String        | –          | URL of the image                                                                                                                                      |
+| `zoom`         | Number | 2   | it's define the zoom level of component                                          |
+| `width`          | Number/String | `'100%'`   | Image width                                                                                                                |
+| `magnifierWidth`      | Number        | `150`     | Width of the Magnifier                                                                                                       |
+| `magnifierHeight`     | Number        | `150`         | Height of the magnifier                                                             |
+| `borderWidth`     | Number        | `2`      | Border Width of the magnifier                                                                             |
+| `borderColor`        | String        | `white`      | Color of magnifier border                                                                                                                              |
+
+
 ## Usage/Examples
 
 ```javascript
